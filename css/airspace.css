@@ -384,6 +384,7 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
 }
 #global-header .block h1 {
+  font-family: 'Roboto', sans-serif;/* <!-- neu hinzugefügt --> */
   font-weight: 100;
   font-size: 45px;
   letter-spacing: 6px;
