@@ -35,48 +35,50 @@ permalink: /faq/
   </div>
 </section>
 <!-- FAQs Start -->
-<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
-  <ul class="cd-faq__categories">
-    <li><a class="cd-faq__category cd-faq__category-selected truncate" href="#basics">Basics</a></li>
-    <li><a class="cd-faq__category truncate" href="#mobile">Mobile</a></li>
-    <li><!-- ... --></li>
-    <!-- ... -->
-  </ul> <!-- cd-faq__categories -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-  <div class="cd-faq__items">
-    <ul id="basics" class="cd-faq__group">
-      <li class="cd-faq__title"><h2>Basics</h2></li>
-      <li class="cd-faq__item">
-        <a class="cd-faq__trigger" href="#0"><span>How do I change my password?</span></a>
-        <div class="cd-faq__content">
-          <div class="text-component">
-            <!-- content here -->
-          </div>
-        </div> <!-- cd-faq__content -->
-      </li>
+<script>
+ $(document).ready(function() {
+ 
+    $('.faq_question').click(function() {
+ 
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+ 
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+ 
+    });
+ 
+});
+</script>
+<style>
+/*FAQS*/
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+ 
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
 
-      <li class="cd-faq__item">
-        <a class="cd-faq__trigger" href="#0"><span>How do I sign up?</span></a>
-        <div class="cd-faq__content">
-          <div class="text-component">
-            <!-- content here -->
-          </div>
-        </div> <!-- cd-faq__content -->
-      </li>
+</style>
 
-      <li class="cd-faq__item"><!-- ... --></li>
-
-      <!-- ... -->
-    </ul> <!-- cd-faq__group -->
-
-    <ul id="mobile" class="cd-faq__group">
-      <!-- ... -->
-    </ul> <!-- cd-faq__group -->
-
-    <!-- ... -->
-  </div> <!-- cd-faq__items -->
-
-  <a href="#0" class="cd-faq__close-panel text-replace">Close</a>
-
-  <div class="cd-faq__overlay" aria-hidden="true"></div>
-</section> <!-- cd-faq -->
+<div class="faq_container">
+   <div class="faq">
+      <div class="faq_question">Question goes here</div>
+           <div class="faq_answer_container">
+              <div class="faq_answer">Answer goes here</div>
+           </div>        
+    </div>
+ </div>
