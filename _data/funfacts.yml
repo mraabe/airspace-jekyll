@@ -1,12 +1,12 @@
-- counter: 5000
-  icon: ion-ios-chatboxes-outline
-  text: Cups of Coffee
+- counter: 10
+  icon: logos:google-meet
+  text: GoogleMeet Konferenzen mit Axel 
 - counter: 218
-  icon: fa-solid:money-bill-alt
+  icon: ic:twotone-account-balance
   text: € sparen Jugendliche jährlich
 - counter: 20
   icon: ion-ios-compose-outline
   text: Prozent haben kein Konto
 - counter: 50
   icon: emojione:money-mouth-face
-  text: € Taschengeld bekommen Jugendliche 
+  text: € Taschengeld bekommen Jugendliche
