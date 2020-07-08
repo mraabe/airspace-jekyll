@@ -682,7 +682,7 @@ font header .navbar-default .navbar-nav li a:hover {
   height: 60px;
   background: #47424C;
   border: none;
-  color: #fff;
+  color: #F6F8FA; /* #fff */
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
@@ -710,7 +710,7 @@ font header .navbar-default .navbar-nav li a:hover {
 .social-icons i {
   color: #2C2C2C;
   margin-right: 25px;
-  font-size: 25px;
+  font-size: 40px;
 }
 .google-map {
   position: relative;
