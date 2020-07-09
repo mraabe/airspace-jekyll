@@ -20,7 +20,7 @@ px      68    160    252    344    436    528    620    712    */
 	wrapper Start 
 --*/
   #wrapper {
-    text-align: center;
+    text-align: left;
   }
   #wrapper .block img {
     padding-top: 100px;
@@ -192,7 +192,7 @@ px      68    160    252    */
 	wrapper Start 
 --*/
   #wrapper {
-    text-align: center;
+    text-align: left;
     padding-top: 70px;
     padding-bottom: 100px;
   }
