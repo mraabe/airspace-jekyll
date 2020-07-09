@@ -201,6 +201,11 @@ px      68    160    252    */
     padding-left: 0px;
     width: 100%;
   }
+  
+  /*von MR zugefügt*/
+    #wrapper .block h1 {
+    font-size: 20px;
+  } 
   /*--
 	service Start 
 --*/
@@ -322,6 +327,15 @@ px      68    160    252    */
     font-size: 20px;
     line-height: 25px;
   }
+  
+  /*von MR hinzugefügt*/
+    #wrapper-work ul li .items-text h1 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
   #wrapper-work ul li .items-text p {
     font-size: 11px;
     line-height: 20px;
