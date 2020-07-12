@@ -397,6 +397,31 @@ px      68    160    252    */
   /*--
 	footer Start 
 --*/
+
+ /*--
+	footer Start 
+--*/
+  footer .navbar {
+    margin-bottom: 0px;
+    border: 0px;
+    min-height: 40px;
+  }
+  footer .navbar-default {
+    border: 0px;
+    width: 68%;
+  }
+  footer .navbar-default .navbar-nav li a {
+    color: #494949;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+  footer .navbar-default .navbar-nav li a:hover {
+    color: #000;
+  }
+
+
+
+/*
   footer .footer-manu {
     display: none;
   }
